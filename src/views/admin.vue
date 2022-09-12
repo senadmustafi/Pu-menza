@@ -3,20 +3,20 @@
     <h1 class="naslov">ADMIN PANEL</h1>
  <div class="formaa">
   <form action="/action_page.php">
-    <label >Dorucak</label>
+    <label >Doručak</label>
     <input type="text" id="dorucak" name="dorucak" v-model="dorucak" placeholder="Dorucak..">
 
-    <label >Rucak</label>
+    <label >Ručak</label>
     <input type="text" id="rucak" name="rucak" v-model="rucak" placeholder="Rucak..">
-    <label >Dasert</label>
+    <label >Desert</label>
     <input type="text" id="desert" name="desert"  v-model="desert" placeholder="Desert..">
 
     <label for="dani">Dan</label>
     <select id="dani" name="dani" v-model="dani">
-      <option value="ponedeljak">Pondeljak</option>
+      <option value="ponedeljak">Ponedeljak</option>
       <option value="utorak">Utorak</option>
-      <option value="sreda">Sreda</option>
-      <option value="cetvrtak">Cetvrtak</option>
+      <option value="sreda">Srijeda</option>
+      <option value="cetvrtak">Četvrtak</option>
       <option value="petak">Petak</option>
       <option value="subota">Subota</option>
     </select>
@@ -27,7 +27,7 @@
       <option value="fastfood">FASTFOOD MENI</option>
     </select>
   
-    <input type="button"  value="Submit" @click="izmena()">
+    <input type="button"  value="Submit" @click="izmjena()">
   </form>
 </div>
 </div>
@@ -100,7 +100,7 @@ data() {
       }
   },
   methods:{
-      izmena(){
+      izmjena(){
          setDoc(doc(db, this.dani ,this.meni), {
         dorucak: this.dorucak,
         rucak: this.rucak,

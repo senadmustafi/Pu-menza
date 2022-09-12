@@ -12,7 +12,8 @@
     "firebase": "^9.6.10",
     "gsap": "^3.9.1",
     "vue": "^2.6.11",
-    "vue-router": "^3.2.0"
+    "vue-router": "^3.2.0",
+    "vue2-google-maps": "^0.10.7"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -24,6 +25,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "vue-browser-geolocation": "^1.8.0",
     "vue-template-compiler": "^2.6.11"
   }
 }

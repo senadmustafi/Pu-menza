@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
+   <div class="container-fluid">
     <a class="navbar-brand" href="#">FIPU Menza</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -9,22 +9,45 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li v-if="!store.currentUser" class="nav-item">
-          <router-link to="/" class="nav-link" id="sene">Pocetna</router-link>
+          <router-link to="/" class="nav-link" id="sene">Početna</router-link>
         </li>
         <li  v-if="!store.currentUser" class="nav-item">
-          <router-link to="/register" class="nav-link">Registracija</router-link>
+          <router-link to="/registar" class="nav-link">Registracija</router-link>
           
         </li>
                              <li  v-if="store.currentUser"  class="nav-item">
-          <router-link to="/main" class="nav-link">Pocetna</router-link>
+          <router-link to="/main" class="nav-link">Početna</router-link>
         </li>
                       <li  v-if="store.adminUser"  class="nav-item">
           <router-link to="/admin" class="nav-link">Admin-Panel</router-link>
+          
+        </li>
+            <li  v-if="store.currentUser" class="nav-item">
+          <router-link to="/karta" class="nav-link">KARTA</router-link>
+    </li>
+                                  <li v-if="store.currentUser" class="nav-item">
+            <a href="https://www.isvu.hr/studomat/hr/student/razinapravaprehrane" class="nav-link" >Stanje Iksice</a>
         </li>
           <li v-if="store.currentUser" class="nav-item">
           <a href="#" class="nav-link" @click.prevent="logout()">Logout</a>
         </li>
+        
+
       </ul>
+       <!--<div>
+  <b-dropdown
+    split
+    split-variant="outline-primary"
+    variant="primary"
+    text="Split Variant Dropdown"
+    class="m-2"
+  >
+    <b-dropdown-item href="#">Action</b-dropdown-item>
+    <b-dropdown-item href="#">Another action</b-dropdown-item>
+    <b-dropdown-item href="#">Something else here...</b-dropdown-item>
+  </b-dropdown>
+</div> -->
+
     </div>
   </div>
     </nav>
@@ -102,7 +125,7 @@ onAuthStateChanged(auth,function(user) {
 });
 
 export default{
-  name:'app',
+  name:'App',
   data(){
       return{
         store,

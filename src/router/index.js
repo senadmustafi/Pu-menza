@@ -24,8 +24,35 @@ const routes = [
    
     component: () => import(/* webpackChunkName: "about" */ '../views/main.vue')
   },
-
-  
+  {
+    path: '/glavnimeni',
+    name: 'glavnimeni',
+   
+    component: () => import(/* webpackChunkName: "about" */ '../views/glavnimeni.vue')
+  },
+  {
+    path: '/vegemeni',
+    name: 'vegemeni',
+   
+    component: () => import(/* webpackChunkName: "about" */ '../views/vegemeni.vue')
+  },  
+  {
+    path: '/fastfoodmeni',
+    name: 'fastfoodmeni',
+   
+    component: () => import(/* webpackChunkName: "about" */ '../views/fastfoodmeni.vue')
+  },
+  {
+    path: '/karta/',
+    name:'karta',
+    component: () => import(/* webpackChunkName: "about" */ '../views/karta.vue')
+  },
+  {
+    path: '/registar',
+    name: 'registar',
+   
+    component: () => import(/* webpackChunkName: "about" */ '../views/registar.vue')
+  },
 ]
 
 const router = new VueRouter({
