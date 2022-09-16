@@ -1,12 +1,13 @@
 <template>
   <div class="mes">
     <div 
+      class="square square-lg w-75"
       style="
-        background-color: rgba(255, 255, 255, 0.8) !important;;
-        border-radius: 25px !important;;
-        margin: auto !important;;
-        margin-top: 50px !important;;
-        height: 670px !important;;
+        background-color: rgba(255, 255, 255, 0.8) ;
+        border-radius: 25px ;
+        margin: auto ;
+        margin-top: 50px ;
+        height: 670px ;
       "
     >
       <router-link to="/glavnimeni" class="prvasl"
@@ -36,9 +37,9 @@
   
 }
 .trecasl {
-  position: relative !important;;
-  left: 500px !important;;
-  top: -200px !important;;
+  position: relative !important;
+  left: 500px !important;
+  top: -200px !important;
 }
 @media only screen and (max-width: 1200px) {
   .prvasl,
