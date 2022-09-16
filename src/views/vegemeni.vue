@@ -4,9 +4,9 @@
       class="square square-lg w-50 cetv"
       style="
         background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 25px;
-        margin: auto;
-        height: 380px;
+        border-radius: 25px !important;;
+        margin: auto !important;;
+        height: 380px !important;;
       "
     >
       <div class="headdiv">
@@ -22,10 +22,10 @@
     <div
       class="square square-lg w-50 cetv"
       style="
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 25px;
-        margin: auto;
-        height: 380px;
+        background-color: rgba(255, 255, 255, 0.8) !important;;
+        border-radius: 25px !important;;
+        margin: auto !important;;
+        height: 380px !important;;
       "
     >
       <div class="headdiv">
@@ -42,10 +42,10 @@
     <div
       class="square square-lg w-50 cetv"
       style="
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 25px;
-        margin: auto;
-        height: 380px;
+        background-color: rgba(255, 255, 255, 0.8) !important;;
+        border-radius: 25px !important;;
+        margin: auto !important;;
+        height: 380px !important;;
       "
     >
       <div class="headdiv">

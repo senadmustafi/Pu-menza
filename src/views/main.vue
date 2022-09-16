@@ -3,11 +3,11 @@
     <div
       class="square square-lg w-75"
       style="
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 25px;
-        margin: auto;
-        margin-top: 50px;
-        height: 670px;
+        background-color: rgba(255, 255, 255, 0.8) !important;;
+        border-radius: 25px !important;;
+        margin: auto !important;;
+        margin-top: 50px !important;;
+        height: 670px !important;;
       "
     >
       <router-link to="/glavnimeni" class="prvasl"
@@ -28,20 +28,20 @@
 
 <style >
 .prvasl {
-  position: relative;
-  left: -500px;
-  top: 205px;
+  position: relative !important;;
+  left: -500px !important;;
+  top: 205px !important;;
 }
 
 .trecasl {
-  position: relative;
-  left: 500px;
-  top: -200px;
+  position: relative !important;;
+  left: 500px !important;;
+  top: -200px !important;;
 }
 @media only screen and (max-width: 1200px) {
   .prvasl,
   .trecasl {
-    position: static;
+    position: static !important;;
   }
 }
 </style>
