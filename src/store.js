@@ -2,7 +2,8 @@
 export default{
 
     currentUser:null,
-    adminUser : null,
+    adminUsers : [],
+    isAdmin:false,
 
 
 }
