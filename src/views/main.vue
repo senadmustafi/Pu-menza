@@ -1,7 +1,6 @@
 <template>
   <div class="mes">
-    <div
-      class="square square-lg w-75"
+    <div 
       style="
         background-color: rgba(255, 255, 255, 0.8) !important;;
         border-radius: 25px !important;;
@@ -32,7 +31,10 @@
   left: -500px !important;;
   top: 205px !important;;
 }
+.asasas{
 
+  
+}
 .trecasl {
   position: relative !important;;
   left: 500px !important;;
